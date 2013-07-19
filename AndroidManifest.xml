@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mitiinventory"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.mitiinventory.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mitiinventory.MainActivity" />
+        <activity android:name="com.mitiinventory.ViewMain" />
+       
+        <activity android:name="com.mitiinventory.ViewSuppliers"
+            android:label="Supplies" />
+        <activity android:name="com.mitiinventory.AddMain" />
+        <activity android:name="com.mitiinventory.AddSupplies" />
+        <activity android:name="com.mitiinventory.DeleteSupplies" 
+            android:label="Supplies"/>
+        <activity android:name="com.mitiinventory.DeleteMain" />
+        <activity android:name="com.mitiinventory.ViewMedicines"
+            android:label="Medicines" />
+        <activity android:name="com.mitiinventory.AddMedicines" />
+        <activity android:name="com.mitiinventory.MedicineDetails" />
+    </application>
+
+</manifest>

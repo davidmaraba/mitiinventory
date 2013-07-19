@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/medDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:text="Medicines Details"
+        android:textSize="12pt"
+        android:textStyle="bold" />
+
+    <!-- Input Name -->
+
+    <TextView
+        android:id="@+id/medName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medDetails"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:text="Medicine Name"
+        android:textSize="9pt" />
+
+    <TextView
+        android:id="@+id/medicineName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medName"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="10dp"
+        
+        android:singleLine="true"
+        android:textSize="9pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/encounter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicineName"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:text="Encounter Number"
+        android:textSize="9pt" />
+
+    <TextView
+        android:id="@+id/encounter_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encounter"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:textStyle="bold" />
+
+    <!-- Input Price -->
+
+    <TextView
+        android:id="@+id/rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encounter_number"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+        android:text="Restock Value"
+        android:textSize="9pt" />
+
+    <!-- Description Label -->
+
+    <TextView
+        android:id="@+id/restockValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rest"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textStyle="bold" />
+
+    <!-- Input description -->
+
+    <TextView
+        android:id="@+id/descr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restockValue"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="top"
+        android:lines="4"
+        android:text="Description"
+        android:textSize="9pt" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descr"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="top"
+        android:lines="4" />
+
+</RelativeLayout>

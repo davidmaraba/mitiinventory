@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/supplies_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/supplies_encounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:textColor="#040404"
+        
+        android:visibility="gone"
+        android:layout_below="@+id/supplies_name"
+        android:typeface="sans" />
+    <TextView
+        android:id="@+id/supplies_restock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:textColor="#040404"
+        
+        android:visibility="gone"
+        android:layout_below="@+id/supplies_name"
+        android:layout_toRightOf="@+id/supplies_encounter"
+        android:typeface="sans" />
+     <TextView
+        android:id="@+id/supplies_decription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:textColor="#040404"
+        
+        android:visibility="gone"
+        android:layout_below="@+id/supplies_name"
+        android:layout_toRightOf="@+id/supplies_restock"
+        android:typeface="sans" />
+
+         <TextView
+        android:id="@+id/supplies_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+       
+        android:gravity="right"
+        android:text="5:45"
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
