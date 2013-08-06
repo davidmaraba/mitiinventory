@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.mitihealth.DashBoardLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:layout_weight="1"
+  
+     >
+
+    <!-- Adding to inventory-->
+    <Button 
+        android:id="@+id/btn_chekOut"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/add_inventory"
+        android:text="Check Out"/>
+    
+    <!-- View remaining in inventory -->
+    <Button 
+        android:id="@+id/btn_clinical"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/view_inventory"
+        android:text="Clinical"/>
+     <!-- Points Button -->
+    <Button 
+        android:id="@+id/btn_inventory"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/delete_inventory"
+        android:text="Inventory"
+        />
+    <!-- Reorder Level -->
+    <Button 
+        android:id="@+id/btn_reports"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/reorder_level"
+        android:text="Reports"/>
+   
+    <!-- About Button -->
+    <Button 
+        android:id="@+id/btn_About"
+        style="@style/DashboardButton"
+        />
+        <Button 
+        android:id="@+id/btn_logout"
+        style="@style/DashboardButton"
+      
+        android:text=""/>
+        
+       
+</com.mitihealth.DashBoardLayout>

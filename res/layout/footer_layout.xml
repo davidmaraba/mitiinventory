@@ -4,7 +4,7 @@
    android:id="@+id/footer"
    >
    <TextView 
-       android:text="Manage your inventory"
+       android:text="MitiHealth"
        android:layout_width="fill_parent"
        android:layout_height="wrap_content"
        android:textColor="#606060"

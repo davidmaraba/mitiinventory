@@ -17,27 +17,39 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.mitiinventory.LoginActivity" >
+        <activity android:name="com.mitihealth.LoginActivity" android:configChanges="orientation|screenSize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.mitiinventory.MainActivity" />
-        <activity android:name="com.mitiinventory.ViewMain" />
-       
-        <activity android:name="com.mitiinventory.ViewSuppliers"
-            android:label="Supplies" />
-        <activity android:name="com.mitiinventory.AddMain" />
-        <activity android:name="com.mitiinventory.AddSupplies" />
-        <activity android:name="com.mitiinventory.DeleteSupplies" 
-            android:label="Supplies"/>
-        <activity android:name="com.mitiinventory.DeleteMain" />
-        <activity android:name="com.mitiinventory.ViewMedicines"
-            android:label="Medicines" />
-        <activity android:name="com.mitiinventory.AddMedicines" />
-        <activity android:name="com.mitiinventory.MedicineDetails" />
+        <activity android:name="com.mitihealth.MainActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.ViewMain" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.CheckOut" android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name="com.mitihealth.ViewSuppliers"
+            android:label="Supplies" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.AddMain" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.AddSupplies" android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name="com.mitihealth.DeleteSupplies"
+            android:label="Supplies" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.DeleteMain" android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name="com.mitihealth.ViewMedicines"
+            android:label="Medicines" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.AddMedicines" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.MedicineDetails" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.HomePage" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.mitihealth.CheckOutMainActivity" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.mitihealth.CheckOutHome" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.CheckOutSale" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.InventoryMain" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.SupplierManagement" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.mitihealth.AddContact" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.mitihealth.AddItems" android:configChanges="orientation|screenSize" />
+         <activity android:name="com.mitihealth.ReorderMain" android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

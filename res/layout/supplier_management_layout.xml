@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    <TextView android:id="@+id/txtSupplierName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"/>
+    <TextView android:id="@+id/txtSuppTown"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtSupplierName"/>
+    <TextView android:id="@+id/txtSupplierNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSupplierName"/>
+    <TextView android:id="@+id/chkSupplierDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+        <TextView android:id="@+id/chkSupplierCreditDetails"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/chkSupplierDetails"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+    <TextView android:id="@+id/supplierId"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/chkSupplierCreditDetails"
+        android:visibility="gone"></TextView>
+
+</RelativeLayout>
